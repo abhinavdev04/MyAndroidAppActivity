@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,24 +33,31 @@ public class MainActivity extends AppCompatActivity {
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//
+//                if (isSignUp) {
+//
+//                    // Change to Login
+//                    isSignUp = false;
+//
+//                    signUpTv.setText("LOGIN");
+//                    signUpBtn.setText("Do u want to Signup");
+//
+//                } else {
+//
+//                    // Change back to Sign Up
+//                    isSignUp = true;
+//
+//                    signUpTv.setText("SIGN UP");
+//                    signUpBtn.setText("Do u want to Logiin");
+//
+//
+//
+//
+//                }
+                Intent i = new Intent(MainActivity.this, LifeCycleActivity.class);
+                startActivity(i);
 
-                if (isSignUp) {
 
-                    // Change to Login
-                    isSignUp = false;
-
-                    signUpTv.setText("LOGIN");
-                    signUpBtn.setText("Do u want to Signup");
-
-                } else {
-
-                    // Change back to Sign Up
-                    isSignUp = true;
-
-                    signUpTv.setText("SIGN UP");
-                    signUpBtn.setText("Do u want to Logiin");
-
-                }
 
 //                Toast.makeText(
 //                        MainActivity.this,
