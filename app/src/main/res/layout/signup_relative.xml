@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/facebookImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/facebook"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/SignUptv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebookImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fullNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignUptv"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name"
+        android:drawableStart="@drawable/ic_person" />
+
+    <EditText
+        android:id="@+id/EmailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullNameET"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_email" />
+
+    <EditText
+        android:id="@+id/PasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailET"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/FacultyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordET"
+        android:layout_marginTop="20dp"
+        android:text="Faculty"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/facultySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/FacultyTV"
+        android:layout_alignTop="@id/FacultyTV"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/faculty_name" />
+
+    <CheckBox
+        android:id="@+id/rememberMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facultySpinner"
+        android:layout_marginTop="10dp"
+        android:text="Remember me" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rememberMe"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up"
+        android:backgroundTint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an account?"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/signhupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in_underlined"
+        android:textSize="16sp"
+         />
+
+</RelativeLayout>

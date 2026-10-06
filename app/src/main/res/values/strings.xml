@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <array name="faculty_name">
+        <item>BCA</item>
+        <item>Engineering</item>
+        <item>B.Tech</item>
+        <item>MCA</item>
+    </array>
+    <string name="sign_in_underlined"><u>Sign in</u></string>
+    <string name="remember_me">Remember me</string>
+</resources>
